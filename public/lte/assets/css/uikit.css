@@ -1,0 +1,173 @@
+/* Gaya untuk sidebar */
+.sidebar {
+  background-color: rgb(246, 251, 255); /* Warna latar belakang sidebar */
+  position: fixed; 
+  top: 0px; 
+  left: 0px;
+  width: 250px; /* Menetapkan lebar sidebar */
+  height: 100%; /* Menetapkan tinggi layar */
+  font-family: 'Rubik', sans-serif; /* Menerapkan font Rubik */
+  overflow: hidden; /* Menambahkan scrollbar jika konten sidebar melebihi tinggi layar */
+  z-index: 1000; /* Menetapkan posisi sidebar di depan layar */
+  transition: width 0.3s ease; /* Menggunakan efek transisi */
+}
+
+/* Gaya untuk konten dashboard admin */
+.container {
+  font-family: 'Rubik', sans-serif; /* Menerapkan font Rubik */
+  margin-left: 50px;
+  padding-right: 100px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+
+/* Gaya untuk konten untuk dashboard umum */
+.container1 {
+  font-family: 'Rubik', sans-serif; /* Menerapkan font Rubik */
+  margin-left: 80px;
+  margin-right: 40px;
+  margin-top: 7px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+}
+
+.input-group {
+  margin-left: 81px;
+  padding-right: 120px;
+  margin-top: 30px;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* CSS untuk navbar */
+.navbar {
+  position: fixed;
+  top: 0; /* Menempelkan navbar ke bagian atas */
+  left: 0; /* Menempelkan navbar ke bagian kiri */
+  width: 100%; /* Membuat navbar memenuhi lebar layar */
+  z-index: 999; /* Menjaga navbar di atas elemen lain */
+  background-color: #ffffff; /* Warna background navbar */
+  color: #ffffff; /* Warna teks */
+  padding: 10px 10px; /* Tambahkan padding untuk memperlebar ke bawah */
+  height: 40px; /* Atur tinggi navbar jika diperlukan */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+/* CSS untuk tombol pencarian di index */
+.search {
+  left: -5px;
+  margin-right: 0px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.index {
+  margin-top: 24px;
+  margin-left: 90px;
+  margin-right: 70px;
+  margin-bottom: 50px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.index1 {
+  position: fixed;
+  margin-top: 50px;
+  left: 280px;
+  right: 50px;
+  margin-bottom: 50px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.pengaturanindex {
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-right: 40px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.profil {
+  position: fixed;
+  margin-top: 150px;
+  margin-left: 200px;
+  right: 100px;
+  left: 100px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.notifikasi {
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 50px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.list-group {
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.login {
+  position: fixed;
+  font-family: 'Rubik', sans-serif; /* Menerapkan font Rubik */
+  margin-left: 230px;
+  margin-right: 70px;
+  margin-top: 40px;
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  padding: 20px;
+}
+
+.form-control {
+  margin-left: -3px;
+}
+
+.form-check {
+  margin-left: -30px;
+}
+
+.btn-login {
+  margin-left: -30px;
+}
+
+.daftar {
+  position:fixed;
+  font-family: 'Rubik', sans-serif; /* Menerapkan font Rubik */
+  margin-left: 250px;
+  margin-right: 350px;
+  margin-top: 70px;
+  background-color: rgb(255, 255, 255);
+}
+
+.pembayaran {
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 15px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.bank-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tampilan {
+  margin-top: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 15px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.domar{
+  width: 248px;
+  height: auto;
+  margin-bottom: -5px;
+  margin-top: 5px;
+}

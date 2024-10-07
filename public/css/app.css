@@ -1,0 +1,381 @@
+  html, body {
+    margin: 0;
+    padding: 0px;
+    overflow-x: hidden; /* Mencegah overflow horizontal */
+    width: 100vw; /* Memastikan lebar penuh viewport */
+}
+  
+ /* CSS untuk dashboard umum */
+  .container1 {
+    font-family: 'Rubik', sans-serif;
+    background-color: rgb(255, 255, 255);
+    width: 125%; /* Lebar 100% */
+    min-height: 200%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    margin-top: 10px;
+}
+  
+/* CSS untuk navbar */
+.navbar {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 999; 
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  height: 70px; 
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 260px; 
+  margin-left: 50px;
+}
+
+.nav-item {
+  margin-right: 30px;
+}
+
+.nav-link {
+  color: #61685f; 
+  margin-right: -15px;
+  padding: 10px; 
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease; /* Efek perubahan warna */
+}
+
+.nav-link:hover {
+  color: #457137 !important;
+}
+
+/* Pseudo-element untuk garis di bawah teks saat link di-hover */
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Jarak garis dengan teks */
+  height: 7px; /* Ketebalan garis */
+  background-color: #457137; /* Warna garis */
+  border-radius: 15px; /* Sudut melengkung pada garis */
+  transition: width 0.3s ease; /* Animasi muncul garis */
+}
+
+/* Pseudo-element untuk garis di bawah teks saat link aktif */
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Jarak garis dengan teks */
+  height: 7px; /* Ketebalan garis */
+  background-color: #457137; /* Warna garis */
+  border-radius: 15px; /* Sudut melengkung pada garis */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #457137 !important;
+}
+
+.nav-link.custom-color {
+  color: #000000; 
+}
+
+.navbar .nav-link img {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+/* Untuk menyesuaikan tampilan mobile */
+@media (max-width: 700px) {
+  .navbar {
+      flex-direction: column; /* Susun item secara vertikal di layar kecil */
+      align-items: flex-start; /* Susun item ke kiri pada layar kecil */
+      height: auto;
+  }
+  
+  .navbar-toggler {
+      margin-left: auto; /* Menjaga toggle button di sisi kanan */
+  }
+
+  .navbar-collapse {
+      width: 100%;
+  }
+
+  .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .nav-item {
+      margin-right: -100px;
+  }
+}
+
+/* CSS untuk produk list */
+  .index {
+    margin-top: 100px;
+    margin-left: 60px;
+    margin-right: -120px;
+    margin-bottom: 50px;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  /* css untuk tabel produk list */
+  .tabel {
+    margin-top: 0px;
+    margin-left: -5px;
+    margin-right: -2px;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  /* css untuk button tambah produk di index */
+  .btn-plus {
+    background-color: #4e6927;
+    color: #ffffff;
+  }
+
+  .btn-plus:hover {
+    background-color: #728a51;
+    color: #ffffff;
+  }
+
+  /* css untuk button edit di index */
+  .btn-edit {
+    background-color: #619b55;
+    color: #ffffff;
+  }
+
+  .btn-edit:hover {
+    background-color: #457137;
+    color: #ffffff;
+  }
+
+/* CSS untuk edit produk */
+  .index1 {
+    position: fixed;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    width: 80%;
+    margin-left: -25px;
+    font-family: 'Rubik', sans-serif;
+  }
+
+/* CSS untuk halaman profil */
+  .profil {
+    position: fixed;
+    margin-top: 60px;
+    margin-left: 200px;
+    right: 250px;
+    left: 100px;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+/* CSS untuk halaman pengaduan */
+  .notifikasi {
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-right: -130px;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .list-group {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  /* CSS untuk card halaman login */
+  .card-login {
+    position: fixed;
+    font-family: 'Rubik', sans-serif; 
+    margin-left: 250px;
+    margin-right: 70px;
+    margin-top: 140px;
+    width: 70%;
+    padding: 20px;
+  }
+  
+  .form-control {
+    margin-left: -3px;
+  }
+  
+  .form-check {
+    margin-left: -30px;
+  }
+  
+  .btn-login {
+    margin-left: 210px;
+  }
+  
+  .daftar {
+    position:fixed;
+    font-family: 'Rubik', sans-serif; /* Menerapkan font Rubik */
+    margin-left: 100px;
+    left: 100px;
+    right: 0px;
+    margin-top: 70px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .tampilan {
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+  }
+
+.btn-logout:hover {
+    background-color: #bc7306; /* Mengubah warna latar saat hover */
+}
+
+.card {
+  width: 70%; /* Atur agar lebar card 100% dari kolom atau kontainer */
+  max-width: 350px; /* Batasi lebar maksimal card */
+  margin: 0px 40px; /* Margin otomatis di kanan dan kiri agar card berada di tengah, dengan jarak vertikal */
+  padding: 0px; /* Jarak dalam card */
+  margin-top: 70px;
+}
+
+.grafik {
+  width: 100%; /* Atur lebar grafik 100% */
+  max-width: 1150px; /* Batasi lebar grafik */
+  margin: 0px 40px; /* Margin otomatis di kanan dan kiri */
+  padding: 0px; /* Jarak grafik */
+}
+
+.card-header-hijau {
+  background-color: #385330; /* Warna hijau */
+  color: white; /* Warna teks putih */
+}
+
+/* Mengatur konten daftar produk agar tampil rapih */
+.product-list {
+  margin-top: 50px;
+  margin-left: -50px; 
+  display: flex;
+  flex-wrap: wrap; /* Agar produk ditampilkan dalam beberapa baris jika diperlukan */
+  justify-content: space-around; /* Mengatur jarak antar produk */
+  padding: 20px 20px;
+}
+
+.product-item {
+  margin: 5px;
+  flex-basis: 15%; /* Atur lebar item produk agar sesuai */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-item:hover img {
+  transform: scale(1.1); /* Membesarkan gambar saat di-hover */
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.1s ease;
+}
+
+.product-title {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #9d4f01ef; /* Warna teks */
+  margin-bottom: 10px;
+}
+
+.product-button {
+  display: inline-block;
+  background-color: #094c00; 
+  color: rgb(255, 255, 255);
+  padding: 8px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.product-button:hover {
+  background-color: #658c62; /* Mengubah warna latar saat hover */
+}
+
+.dashboard-image img {
+  margin-top: 100px;
+  bottom: 20px;
+  width: 20%; /* Pastikan gambar dashboard menggunakan lebar penuh */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Agar gambar berada di tengah */
+}
+
+/* Memastikan carousel menggunakan lebar penuh */
+.carousel-inner img {
+  margin-bottom: 50px;
+  width: 100%; /* Gambar carousel full width */
+  height: auto; /* Tinggi menyesuaikan */
+}
+
+.carousel-item .img-fluid {
+  max-width: 150%; /* Sesuaikan gambar utama */
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-item .small-img {
+  max-width: 150%; /* Ukuran lebih kecil untuk gambar samping */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Opsi untuk memberikan latar belakang pada icon navigasi */
+    border-radius: 50%;
+}
+
+/* Dots styling */
+.carousel-indicators button {
+  margin-top: -100px;
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #ffb703;
+}
+
+/* Untuk menempatkan gambar di tengah */
+.dashboard-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Menambahkan responsive untuk layar kecil */
+@media (max-width: 768px) {
+  .product-item {
+      flex-basis: 48%; /* Atur produk agar menjadi dua kolom di layar kecil */
+  }
+}
+
+@media (max-width: 576px) {
+  .product-item {
+      flex-basis: 100%; /* Atur produk agar menjadi satu kolom di layar sangat kecil */
+  }
+}
