@@ -7,8 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminMiddleware
 {
-    // Middleware untuk mengatur akses admin, jadi hanya admin role 1 yang bisa memiliki akses sebagai admin
-    public function handle($request, Closure $next)
+        public function handle($request, Closure $next)
     {
         if (Auth::check() && Auth::user()->role_id == 1) {
             return $next($request);

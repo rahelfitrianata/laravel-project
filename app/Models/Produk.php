@@ -11,12 +11,12 @@ class Produk extends Model
 
     protected $table = 'produk1';
     protected $primaryKey = 'idproduk';
-    public $incrementing = false; // Menonaktifkan auto increment
-    protected $keyType = 'int'; // Tipe data primary key
+    public $incrementing = false; 
+    protected $keyType = 'int'; 
     
     protected $fillable = [
         'idproduk', 'namaproduk', 'stokproduk', 'hargaproduk'
     ];
-    public $timestamps = false; // Tambahkan ini untuk menonaktifkan timestamps otomatis
+    public $timestamps = false; 
 }
 

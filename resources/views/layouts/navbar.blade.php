@@ -12,13 +12,6 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <!-- Menu Admin (Ditampilkan untuk Semua) -->
-                <li class="nav-item">
-                    <a href="{{ route('dashboard') }}" class="nav-link custom-color {{ Request::routeIs('dashboard') ? 'active' : '' }}">
-                        Admin
-                    </a>
-                </li>
-
                 <!-- Menu Dashboard Umum (Ditampilkan untuk Semua) -->
                 <li class="nav-item">
                     <a href="{{ route('dashboard.umum') }}" class="nav-link custom-color {{ Request::is('dashboardumum') ? 'active' : '' }}">

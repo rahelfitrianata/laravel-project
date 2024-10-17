@@ -13,8 +13,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'profile_photo_path',
-        'name', 'email', 'password', 'telegram_id', 'telegram_username',
+        'telegram_id', 
+        'telegram_username',
     ];
 
     protected $hidden = [

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.prof')
 
 @section('content')
 <div class="halamanlogin">
@@ -20,7 +20,7 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
+                        </div> 
 
                         <div class="row mb-3">
                             <label for="password" class="col-md-4 col-form-label text-left">{{ __('Password') }}</label>

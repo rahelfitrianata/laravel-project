@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Daftar Pengaduan')
+@section('title', 'Customer Complaints')
 
 @section('content')
 <div class="notifikasi">

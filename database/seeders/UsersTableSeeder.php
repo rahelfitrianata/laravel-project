@@ -16,7 +16,7 @@ class UsersTableSeeder extends Seeder
             ['email' => 'rahelfitrianata@gmail.com'],
             [
                 'name' => 'Rahel Fitrianata',
-                'password' => Hash::make('password123'), // Sesuaikan password dengan yang Anda inginkan
+                'password' => Hash::make('admin123'), // Sesuaikan password dengan yang Anda inginkan
                 'role_id' => 1 // Pastikan role_id 1 sesuai dengan ID role admin di tabel roles
             ]
         );

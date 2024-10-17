@@ -24,7 +24,6 @@
             <div class="content-wrapper">
                 @yield('content')
             </div>
-            @include('layouts.footer')
         </div>
     </div>
         <!-- Bootstrap JS -->
